@@ -1,2 +1,2 @@
-web
+dariofreije.github.io
 ===
