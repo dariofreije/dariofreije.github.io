@@ -17,8 +17,16 @@ a:hover {
     color: #0b0080;
 }
 
-h1, h2 {
+h1 {
+    font-size: 1.4em; /* Más chico que el valor por defecto */
     margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 8px;
 }
 
 ul {
