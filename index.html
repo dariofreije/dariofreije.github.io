@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html> 
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Dario Freije</title>
@@ -10,8 +10,30 @@
     <meta property="og:image" content="https://dariofreije.files.wordpress.com/2022/08/dariofreije500.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_ES" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #000;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header-logo img {
+            width: 100%;
+            max-width: 720px;
+            height: auto;
+        }
+
         .tooltip {
             position: relative;
             display: inline-block;
@@ -27,65 +49,109 @@
             padding: 6px;
             position: absolute;
             z-index: 1;
-            bottom: 95%; /* muestra arriba de la imagen */
+            bottom: 110%;
             left: 50%;
             transform: translateX(-50%);
             opacity: 0;
-            transition: opacity 0.5s;
+            transition: opacity 0.4s;
         }
 
         .tooltip:hover .tooltiptext {
             visibility: visible;
             opacity: 1;
         }
+
+        .store-links a {
+            display: block;
+            margin: 20px auto;
+        }
+
+        .store-links img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-top: 30px;
+            color: #000;
+        }
+
+        .icon-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .icon-links a img {
+            height: 77px;
+            width: auto;
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 600px) {
+            .icon-links a img {
+                height: 50px;
+            }
+        }
     </style>
 </head>
 
-<body> 
-<a href="https://plus.google.com/115635089141123479270" rel="publisher"></a>
-<div align="center">
-    <br>
-    <a href="index.html"><img src="https://dariofreije.files.wordpress.com/2022/08/dariofreije720.png" alt="Dario Freije"></a>
-    <br>
-    <font face="arial"> 
-        <p><h1>Fixtures de Freestyler DMX y Librerías de Magic 3D</h1></p> 
-    </font>
-    <br>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="https://dariofreije.files.wordpress.com/2022/08/dariofreije720.png" alt="Dario Freije">
+            </a>
+        </div>
 
-    <!-- Tienda Argentina con tooltip -->
-    <a href="https://dariofreije.mitiendanube.com/productos" class="tooltip">
-        <img src="https://dariofreije.files.wordpress.com/2022/08/argentina720-1.png" alt="Tienda Argentina">
-        <span class="tooltiptext">Valores en pesos argentinos. <br>Envío manual en horarios de trabajo</span>
-    </a>
-    <br><br>
+        <!-- Título -->
+        <h1>Fixtures de Freestyler DMX y Librerías de Magic 3D</h1>
 
-    <!-- Tienda Internacional con tooltip -->
-    <a href="https://payhip.com/DarioFreije" class="tooltip">
-        <img src="https://dariofreije.files.wordpress.com/2022/08/internacional720-1.png" alt="Tienda Internacional">
-        <span class="tooltiptext">Valores en dólares. <br>Envío automático 24/7</span>
-    </a>
-    <br><br><br><br>
+        <!-- Tiendas -->
+        <div class="store-links">
+            <!-- Tienda Argentina -->
+            <a href="https://dariofreije.mitiendanube.com/productos" class="tooltip">
+                <img src="https://dariofreije.files.wordpress.com/2022/08/argentina720-1.png" alt="Tienda Argentina">
+                <span class="tooltiptext">Valores en pesos argentinos. <br>Envío manual en horarios de trabajo</span>
+            </a>
 
-	<!-- Iconos con tooltips -->
-    <a href="https://youtube.com/@DarioJFreije" target="_blank" class="tooltip" style="margin-right: 80px;">
-        <img src="https://dariofreije.files.wordpress.com/2023/04/yt_77.png" alt="YouTube">
-        <span class="tooltiptext">Tutoriales de Freestyler</span>
-    </a>
+            <!-- Tienda Internacional -->
+            <a href="https://payhip.com/DarioFreije" class="tooltip">
+                <img src="https://dariofreije.files.wordpress.com/2022/08/internacional720-1.png" alt="Tienda Internacional">
+                <span class="tooltiptext">Valores en dólares. <br>Envío automático 24/7</span>
+            </a>
+        </div>
 
-    <a href="mailto:dario2004@gmail.com?subject=Consulta&body=Hola Dario, me interesa..." target="_blank" class="tooltip">
-        <img src="https://dariofreije.files.wordpress.com/2023/04/email.png" alt="Email">
-        <span class="tooltiptext">Contáctame por Email</span>
-    </a>
+        <!-- Íconos -->
+        <div class="icon-links">
+            <a href="https://youtube.com/@DarioJFreije" target="_blank" class="tooltip">
+                <img src="https://dariofreije.files.wordpress.com/2023/04/yt_77.png" alt="YouTube">
+                <span class="tooltiptext">Tutoriales de Freestyler</span>
+            </a>
 
-    <a href="https://wa.me/543512658987" target="_blank" class="tooltip" style="margin-left: 80px;">
-        <img src="https://dariofreije.files.wordpress.com/2024/08/whatsapp.png" alt="Whatsapp">
-        <span class="tooltiptext">Contáctame por Whatsapp</span>
-    </a>
-    
-    <a href="herramientas.html" class="tooltip" style="margin-left: 80px;">
-        <img src="https://dariofreije.files.wordpress.com/2025/05/herramientas.png" alt="Herramientas">
-        <span class="tooltiptext">Herramientas Útiles</span>
-    </a>
-</div>
-</body> 
+            <a href="mailto:dario2004@gmail.com?subject=Consulta&body=Hola Dario, me interesa..." target="_blank" class="tooltip">
+                <img src="https://dariofreije.files.wordpress.com/2023/04/email.png" alt="Email">
+                <span class="tooltiptext">Contáctame por Email</span>
+            </a>
+
+            <a href="https://wa.me/543512658987" target="_blank" class="tooltip">
+                <img src="https://dariofreije.files.wordpress.com/2024/08/whatsapp.png" alt="Whatsapp">
+                <span class="tooltiptext">Contáctame por Whatsapp</span>
+            </a>
+
+            <a href="herramientas.html" class="tooltip">
+                <img src="https://dariofreije.files.wordpress.com/2025/05/herramientas.png" alt="Herramientas">
+                <span class="tooltiptext">Herramientas Útiles</span>
+            </a>
+        </div>
+    </div>
+</body>
 </html>
